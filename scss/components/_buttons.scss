@@ -1,0 +1,40 @@
+.btn {
+	font-size: 15px;
+	font-weight: 600;
+	padding: 13px 24px;
+	line-height: 14px;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid black;
+	color: black;
+	background: transparent;
+	transition: .3s;
+	border-radius: 2px;
+	&.btn-full {
+		width: 100%;
+	}
+	&:hover {
+		transition: .3s;
+		background: $orange;
+	}
+	&.btn-white {
+		color: #fff;
+		border: 2px solid #fff;
+		&:hover {
+			border: 2px solid $orange;
+		}
+	}
+	&.bigger {
+		padding: 20px 20px;
+	}
+	&.btn-orange {
+		background: $orange;
+		color: #fff;
+		border: 2px solid $orange;
+		&:hover {
+			background: $darkblue;
+			color: #fff;
+			border: 2px solid $darkblue;
+		}
+	}
+}

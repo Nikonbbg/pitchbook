@@ -1,0 +1,31 @@
+/* variables */
+
+$font: 'Open Sans', sans-serif;
+$font2: 'Raleway', sans-serif;
+$font3: 'MyriadPro', sans-serif;
+
+$darkblue: #32485F;
+
+$orange: #FF9644;
+$greynav: #646464;
+$cocialgrey: #86878b;
+
+$greylight: #F5F5F5;
+$greyform: #bdbdbd;
+$greyline: #D6D6D6;
+
+/* mixins */
+@mixin placeholder($color){
+	&::-webkit-input-placeholder {
+		color: #{$color};
+	}
+	&:-moz-placeholder {
+		color: #{$color};
+	}
+	&::-moz-placeholder {
+		color: #{$color};
+	}
+	&:-ms-input-placeholder {
+		color: #{$color};
+	}
+}
