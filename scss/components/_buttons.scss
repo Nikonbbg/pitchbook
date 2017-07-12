@@ -38,3 +38,10 @@
 		}
 	}
 }
+.button-center {
+	display: block;
+	text-align: center;
+	&.space-top {
+		padding-top: 40px;
+	}
+}

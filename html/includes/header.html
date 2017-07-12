@@ -2,13 +2,25 @@
 	<div class="nav-block">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-3">
+				<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
 					<a href="" class="logo">
 						<img src="img/logo.png" alt="">
 					</a>
 				</div>
-				<div class="col-xs-9">
-					<ul class="clear nav-menu tabs-head eventHead" data-for="#head-tabs">
+				<div class="col-xs-6 desktop-hidden">
+					<div class="small-nav">
+						<a href="" class="toggle-main-menu " id="toggleMainMenu">
+							<i class="iconi"></i>
+							<i class="iconi"></i>
+							<i class="iconi"></i>
+						</a>
+					</div>
+					<div class="head-menu-outer" id="menuMobile">
+
+					</div>
+				</div>
+				<div class="tablet-hide col-xs-6 col-sm-9 col-md-9 col-lg-9" id="navMenuDesktop">
+					<ul class="clear nav-menu tabs-head eventHead" data-for="#head-tabs" data-mobile="#menuMobile" data-desktop="#navMenuDesktop">
 						<li class="">
 							<a href="">Features</a>
 						</li>
@@ -30,25 +42,26 @@
 		</div>
 	</div>
 
-	<div class="tabs-header">
-		<div class="container container-max">
-			<div class="hidden-nav tabs-list eventHead" id="head-tabs">
-				<div class="tab" data-tab='0'>
-					#=include tabs-menu1.html
+	<div class="home-wrap" id="desktopHeadTabs">
+		<div class="tabs-header" data-mobile="#menuMobile" data-desktop="#desktopHeadTabs">
+			<div class="container container-max">
+				<div class="hidden-nav tabs-list eventHead" id="head-tabs">
+					<div class="tab" data-tab='0'>
+						#=include tabs-menu1.html
+					</div>
+					<div class="tab" data-tab='1'>
+						#=include tabs-menu2.html
+					</div>
+					<div class="tab" data-tab='2'>
+						#=include tabs-menu1.html
+					</div>
+					<div class="tab" data-tab='3'>
+						#=include tabs-menu2.html
+					</div>
+					<div class="tab" data-tab='4'>
+						#=include tabs-menu1.html
+					</div>
 				</div>
-				<div class="tab" data-tab='1'>
-					#=include tabs-menu2.html
-				</div>
-				<div class="tab" data-tab='2'>
-					#=include tabs-menu1.html
-				</div>
-				<div class="tab" data-tab='3'>
-					#=include tabs-menu2.html
-				</div>
-				<div class="tab" data-tab='4'>
-					#=include tabs-menu1.html
-				</div>
-
 			</div>
 		</div>
 	</div>
@@ -56,7 +69,7 @@
 	<div class="page-block">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<div class="title line space-top-bot">
 						MODERN AXURE TEMPLATE
 						FOR BEAUTIFUL PROTOTYPES
@@ -72,7 +85,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="col-xs-6">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<div class="wrap-form">
 						<form action="" class="form-block">
 							<div class="head-form">

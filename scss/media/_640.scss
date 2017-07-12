@@ -1,5 +1,61 @@
 @media (max-width: 640px){
 
+	.head-menu-outer {
+		.nav-menu {
+			li  {
+				a {
+					padding: 0 10px;
+				}
+			}
+		}
+		.preview-page {
+			li {
+				width: 50%;
+				a {
+					font-size: 16px;
+				}
+			}
+		}
+		.links-wrap {
+			.list-links {
+				width: 50%;
+			}
+		}
+	}
+	.form-block {
+		.white-wrap {
+			padding-top: 0;
+		}
+	}
+	.describe-list li .icon-tail {
+		width: 55px;
+	}
+
+
+	.carousel-buttons {
+		.left-arrow {
+			left: 10px;
+			height: 40px;
+			width: 40px;
+		}
+		.right-arrow {
+			right: 10px;
+			height: 40px;
+			width: 40px;
+		}
+	}
+
+	.cloud {
+		max-width: 340px;
+		display: inline-block;
+	}
+	.author {
+		max-width: 340px;
+		display: inline-block;
+	}
+
+
+
 
 
 	

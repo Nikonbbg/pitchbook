@@ -1,5 +1,7 @@
 .main-header {
-
+}
+.desktop-hidden {
+	display: none;
 }
 .nav-block {
 	height: 70px;
@@ -145,6 +147,10 @@
 	margin: 0;
 	padding: 0;
 
+	&.up {
+		text-transform: uppercase;
+	}
+
 	&.title-center {
 		display: block;
 		text-align: center;
@@ -226,44 +232,50 @@
 		display: block;
 		width: 100%;
 		background: #fff;
-
-		.form-group {
-			display: block;
-			padding-top: 35px;
-			width: 100%;
-			text-align: left;
-			&.error {
-				.input {
-					@include placeholder(red);
-					border-bottom: 1px solid red;
-				}
-			}
-			.input {
-				transition: .3s;
-				color: black;
-				@include placeholder($greyform);
-				background: transparent;
-				font-weight: 300;
-				border: none;
-				display: block;
-				width: 100%;
-				border-bottom: 1px solid $greylight;
-				padding-bottom: 4px;
-				padding-left: 13px;
-				padding-right: 13px;
-				transition: .3s;
-				&:hover, &:focus {
-					@include placeholder(black);
-					transition: .3s;
-					color: black;
-					border-bottom: 1px solid black;
-				}
-			}
-		}
 	}
 	.button-full {
 		display: block;
 		width: 100%;
+	}
+}
+
+.form-group {
+	display: block;
+	padding-top: 35px;
+	width: 100%;
+	text-align: left;
+	position: relative;
+	font-size: 15px;
+	&.error {
+		.input {
+			@include placeholder(red);
+			border-bottom: 1px solid red;
+		}
+	}
+	textarea {
+		resize: none;
+		height: 148px;
+	}
+	.input {
+		transition: .3s;
+		color: black;
+		@include placeholder($greyform);
+		background: transparent;
+		font-weight: 300;
+		border: none;
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid $greylight;
+		padding-bottom: 4px;
+		padding-left: 13px;
+		padding-right: 13px;
+		transition: .3s;
+		&:hover, &:focus {
+			@include placeholder(black);
+			transition: .3s;
+			color: black;
+			border-bottom: 1px solid black;
+		}
 	}
 }
 

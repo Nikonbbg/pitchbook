@@ -119,6 +119,7 @@ img.adaptive {
 	padding-top: 100%;
 	overflow: hidden;
 	transform: translateZ(0);
+	border-radius: 50%;
 
 	img {
 		position: absolute;
@@ -143,6 +144,7 @@ img.adaptive {
 @import 'components/_footer.scss';
 @import 'components/_header.scss';
 @import 'components/_buttons.scss';
+@import 'components/_slider.scss';
 @import 'main.scss';
 @import 'media/skin-media.scss';
 /* ------------- */

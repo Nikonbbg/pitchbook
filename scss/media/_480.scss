@@ -1,4 +1,89 @@
 @media (max-width: 480px){
+	.head-menu-outer {
+	 	.nav-menu {
+	 		height: 60px;
+	 		li {
+	 			a {
+	 				padding: 0px 7px;
+	 				font-size: 13px;
+	 				line-height: 60px;
+	 			}
+	 		} 
+	 	} 
+	}
+	.mob-marg-free {
+		margin-left: 0;
+	}
+	.mobile-full {
+		width: 100%;
+		display: block;
+	}
+	.social-icons {
+		li {
+			i {
+				font-size: 32px;
+			}
+		}
+	}
+	.tabs-tail  {
+		display: block;
+		width: 100%;
+		font-size: 0;
+		li {
+			width: 33.3%;
+			line-height: 70px;
+			height: 70px;
+			border-right: 1px solid #fff;
+			display: inline-block;
+		}
+	}
+	.page-block {
+		padding: 25px 0;
+	}
+	.tabs-section {
+		padding: 25px 0;
+	}
+	.sub-list-section {
+		padding: 25px 0;
+	}
 
+	.awesome-section {
+		padding: 25px 0;
+	}
 
+	.price-section {
+		padding: 25px 0;
+	}
+
+	.stylish-section {
+		padding: 35px 0;
+	} 
+	
+	.social-icons-footer li {
+		a {
+			padding: 20px 5px; 
+		}
+		i {
+			font-size: 20px;
+		}
+	}
+
+	.carousel-buttons {
+		top: 5px;
+		transform: translateY(0);
+		.left-arrow {
+			left: 10px;
+			height: 25px;
+			width: 25px;
+		}
+		.right-arrow {
+			right: 10px;
+			height: 25px;
+			width: 25px;
+		}
+	}
+
+	.reviews-section {
+		padding: 50px 0 40px;
+	}
 }
